@@ -42,3 +42,8 @@ C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debu
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debug\netcoreapp3.1\ToDoListTeltonika.dll
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debug\netcoreapp3.1\ToDoListTeltonika.pdb
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debug\netcoreapp3.1\ToDoListTeltonika.genruntimeconfig.cache
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debug\netcoreapp3.1\ToDoListTeltonika.MvcApplicationPartsAssemblyInfo.cs

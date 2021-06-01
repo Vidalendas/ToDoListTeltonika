@@ -32,11 +32,20 @@ namespace ToDoListTeltonika
             services.AddScoped<IToDoListRepo, SqlToDoListRepo>();
 
             services.AddControllers();
+
+            services.AddSwaggerGen();
         }
 
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TODO list API V1");
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
