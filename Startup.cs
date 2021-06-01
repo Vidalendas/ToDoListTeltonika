@@ -1,17 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TODO_list.Data;
+using ToDoListTeltonika.Data;
 
 namespace ToDoListTeltonika
 {
@@ -31,6 +26,10 @@ namespace ToDoListTeltonika
         {
             string MySqlConncectionStr = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ToDoContext>(opt => opt.UseMySql(MySqlConncectionStr, ServerVersion.AutoDetect(MySqlConncectionStr)));
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddScoped<IToDoListRepo, SqlToDoListRepo>();
 
             services.AddControllers();
         }
