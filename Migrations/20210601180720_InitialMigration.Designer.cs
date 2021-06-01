@@ -8,7 +8,7 @@ using TODO_list.Data;
 namespace ToDoListTeltonika.Migrations
 {
     [DbContext(typeof(ToDoContext))]
-    [Migration("20210601172102_InitialMigration")]
+    [Migration("20210601180720_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
