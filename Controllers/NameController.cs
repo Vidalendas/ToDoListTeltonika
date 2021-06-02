@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using ToDoListTeltonika.Data;
-using ToDoListTeltonika.Dtos;
 
 namespace ToDoListTeltonika.Controllers
 {
@@ -22,7 +21,8 @@ namespace ToDoListTeltonika.Controllers
             this.jwtAuthenticationManager = jwtAuthenticationManager;
         }
 
-        [AllowAnonymous]
+
+    [AllowAnonymous]
     [HttpPost("authenticate")]
     public IActionResult Authenticate([FromBody] UserCred userCred)
         {
@@ -33,12 +33,6 @@ namespace ToDoListTeltonika.Controllers
                 
             }
             else return Unauthorized();
-        }
-     //GET: api/Name
-     [HttpGet]
-     public IEnumerable<string> Get()
-        {
-            return new string[] { " " };
         }
        
     }

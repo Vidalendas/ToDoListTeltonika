@@ -11,6 +11,13 @@ namespace ToDoListTeltonika.Data
         {
             _context = context;
         }
+        //Not fully implemented
+        public void DeleteAllUserData()
+        {
+            _context.Users.RemoveRange();
+            _context.SaveChanges();
+        }
+
         public Boolean GetUserCredByEmail(string email, string password)
         {
             if (_context.Users.Any(p => p.Email == email && p.Password == password))

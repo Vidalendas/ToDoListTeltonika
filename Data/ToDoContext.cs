@@ -7,10 +7,12 @@ namespace TODO_list.Data
     {
         public ToDoContext(DbContextOptions<ToDoContext> opt) : base(opt)
         {
-
+            
         }
 
         public DbSet<Task> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
+
+        
     }
 }

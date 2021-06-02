@@ -20,7 +20,7 @@ namespace ToDoListTeltonika
         {
             this.key = key;
         }
- 
+        //Need fix: In ClaimTypes should be used roles not email
         public string Authenticate(string email, string password)
         {
 

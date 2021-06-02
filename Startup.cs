@@ -15,7 +15,7 @@ namespace ToDoListTeltonika
 {
     public class Startup
     {
-
+       
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,7 +30,7 @@ namespace ToDoListTeltonika
         {
             string MySqlConncectionStr = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ToDoContext>(opt => opt.UseMySql(MySqlConncectionStr, ServerVersion.AutoDetect(MySqlConncectionStr)));
-
+            
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IUsersRepo, SqlUsersRepo>();
