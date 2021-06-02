@@ -47,3 +47,10 @@ C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debu
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\obj\Debug\netcoreapp3.1\ToDoListTeltonika.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Deividas\Desktop\Teltonika\ToDoListTeltonika\ToDoListTeltonika\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

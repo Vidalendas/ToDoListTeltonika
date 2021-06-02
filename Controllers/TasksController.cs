@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using TODO_list.Dtos;
@@ -18,6 +19,9 @@ namespace ToDoListTeltonika.Controllers
             _repository = repository;
             _mapper = mapper;
         }
+        /// <summary>
+        /// Gets all user tasks.
+        /// </summary>
         //GET api/tasks
         [HttpGet]
         public ActionResult<IEnumerable<TaskReadDto>> GetUserTasks()
@@ -26,7 +30,9 @@ namespace ToDoListTeltonika.Controllers
 
             return Ok(_mapper.Map<IEnumerable<TaskReadDto>>(taskItems));
         }
-
+        /// <summary>
+        /// Gets task by id
+        /// </summary>
         //GET api/tasks/{id}
         [HttpGet("{id}", Name = "GetTaskById")]
         public ActionResult<TaskReadDto> GetTaskById(int id)
@@ -38,7 +44,9 @@ namespace ToDoListTeltonika.Controllers
             }
             return NotFound();
         }
-
+        /// <summary>
+        /// Post a new task
+        /// </summary>
         //POST api/tasks
         [HttpPost]
         public ActionResult<TaskReadDto> CreateTask(TaskCreateDto taskCreateDto)
@@ -51,11 +59,14 @@ namespace ToDoListTeltonika.Controllers
 
             return CreatedAtRoute(nameof(GetTaskById), new { Id = TaskReadDto.Id }, TaskReadDto);
         }
-
+        /// <summary>
+        /// Updates a task
+        /// </summary>
         //PUT api/tasks/{id}
         [HttpPut("{id}")]
         public ActionResult UpdateTask(int id, TaskUpdateDto taskUpdateDto)
         {
+    
             var taskModelFromRepo = _repository.GetTaskById(id);
             if (taskModelFromRepo == null)
             {
@@ -68,8 +79,10 @@ namespace ToDoListTeltonika.Controllers
 
             return NoContent();
         }
-
         //Delete task api/tasks{id}
+        /// <summary>
+        /// Delete task
+        /// </summary>
         [HttpDelete("{id}")]
         public ActionResult DeleteTask(int id)
         {
@@ -83,5 +96,6 @@ namespace ToDoListTeltonika.Controllers
 
             return NoContent();
         }
+
     }
 }
